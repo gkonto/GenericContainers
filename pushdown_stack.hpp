@@ -1,21 +1,7 @@
 #ifndef PUSHDOWN_STACK_HPP
 #define PUSHDOWN_STACK_HPP
 
-template<typename T>
-class Stack;
-
-
-template <typename T>
-class Node
-{
-    friend class Stack<T>;
-public:
-private:
-    Node() = default;
-    T m_item;
-    Node *m_next;
-};
-
+#include "generic_node.hpp"
 
 template <typename T>
 class Stack
